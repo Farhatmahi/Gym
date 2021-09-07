@@ -3,6 +3,7 @@
     --pf : 'Open Sans', sans-serif;
     --brandcolor : #353535;
     --orangecolor : #e23e38;
+    --pcolor : #898989;
 }
 
 /*=====================================================
@@ -423,6 +424,7 @@ gallery starts
     position: relative;
     z-index: 1;
     padding-top: 30px;
+    margin-bottom: 80px;
     margin-top: 20px;
 }
 
@@ -471,3 +473,106 @@ gallery starts
 /*=====================================================
 gallery ends
 ======================================================*/
+
+#team .team-item{
+    margin-right: 30px;
+    margin-top: 80px;
+}
+
+#team .team-item:hover{
+    margin-top: 50px;
+    transition: all ease 0.6s;
+}
+
+#team .team-image{
+    position: relative;
+}
+
+#team .team-image .team-overlay{
+    width: 100%;
+    height: 100%;
+    background: #e23e3886;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    transform: scale(0.95);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0;
+}
+
+#team .team-item:hover .team-overlay{
+    opacity: 1;
+    transition: all ease 0.6s;
+}
+
+#team .team-image .team-overlay ul li{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#team .team-image .team-overlay ul li:last-child{
+    margin-bottom: 0;
+}
+
+#team .team-image .team-overlay a .icon{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+#team .team-image .team-overlay a .icon:hover{
+    background: white;
+    color: #1da0f2;
+    transition: all ease 0.6s;
+}
+
+#team .card-title{
+    font-family: var(--hf);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--brandcolor);
+}
+
+#team h6{
+    font-family: var(--hf);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--pcolor);
+}
+
+#team .card-text{
+    font-family: var(--pf);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--pcolor);
+    visibility: hidden;
+    opacity: 0;
+}
+
+#team .team-item:hover .card-text{
+    visibility: visible;
+    opacity: 1;
+    transition: all ease 0.6s;
+}
+#team .team-item:hover .card{
+    border-color: #dddddd !important;
+    transition: all ease 0.6s;
+}
+
+#team .team-item .card{
+    border-color: transparent;
+}
+
+
+
