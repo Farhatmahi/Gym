@@ -4,6 +4,8 @@
     --brandcolor : #353535;
     --orangecolor : #e23e38;
     --pcolor : #898989;
+    --membg : #dddddd;
+    --memfeature : #f1f1f1;
 }
 
 /*=====================================================
@@ -420,7 +422,8 @@ gallery starts
 ======================================================*/
 
 #gallery .gallery-bg{
-    background: url(../images/gallery-bg.jpg) no-repeat center / cover;
+    /* background: url(../images/gallery-bg.jpg) no-repeat center / cover;
+    background-attachment: fixed; */
     position: relative;
     z-index: 1;
     padding-top: 30px;
@@ -473,6 +476,13 @@ gallery starts
 /*=====================================================
 gallery ends
 ======================================================*/
+
+/*=====================================================
+team starts
+======================================================*/
+#team{
+    padding-bottom: 40px;
+}
 
 #team .team-item{
     margin-right: 30px;
@@ -575,4 +585,203 @@ gallery ends
 }
 
 
+/*=====================================================
+team ends
+======================================================*/
 
+/*=====================================================
+testimonial starts
+======================================================*/
+#testimonial{
+    padding-bottom: 80px;
+}
+
+#testimonial .testimonial-bg{
+    margin-top: 20px;
+    /* background: url(../images/gallery-bg.jpg) no-repeat center / cover; */
+    /* background-attachment: fixed; */
+    background: transparent;
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+#testimonial .testimonial-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.801);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+#testimonial .testimonial-item{
+    margin-right: 30px;
+}
+
+#testimonial .testimonial-item .card-title{
+    font-family: var(--hf);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--brandcolor);
+}
+
+#testimonial .testimonial-item h6{
+    font-family: var(--hf);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#testimonial .testimonial-item .card-text{
+    font-family: var(--pf);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--pcolor);
+    padding-right: 23px;
+    padding-bottom: 80px;
+}
+
+#testimonial .testimonial-item .icon{
+    color: var(--orangecolor);
+    margin-right: 4px;
+}
+
+#testimonial .slick-dots{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    display: flex;
+}
+
+#testimonial .slick-dots li{
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#testimonial .slick-dots li.slick-active{
+    background: var(--orangecolor);
+    border-color: var(--orangecolor);
+}
+
+#testimonial .slick-dots li:last-child{
+    margin-right: 0;
+}
+
+#testimonial .slick-dots li button{
+    font-size: 0;
+    border: none;
+    outline: none;
+}
+
+
+/*=====================================================
+testimonial ends
+======================================================*/
+
+/*=====================================================
+membership starts
+======================================================*/
+#membership{
+    padding-bottom: 80px;
+}
+
+#membership .membership-item{
+    margin-top: 20px;
+}
+
+#membership .membership-item .membership-header h4{
+    background: var(--membg);
+    line-height: 55px;
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 16px;
+    color : var(--brandcolor);
+    transition: all linear 0.4s;
+}
+
+#membership .membership-item .membership-plan{
+    position: relative;
+    z-index: 1;
+}
+
+#membership .membership-item .membership-plan::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.801);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#membership .membership-item .membership-plan p{
+    line-height: 120px;
+    font-family: var(--hf);
+    font-size: 29px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#membership .membership-item .membership-plan p span{
+    font-size: 50px;
+}
+
+#membership .membership-item .membership-features{
+    background: var(--memfeature);
+}
+
+#membership .membership-item .membership-features ul{
+    padding: 40px 0;
+}
+
+#membership .membership-item .membership-features ul li{
+    font-family: var(--pf);
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+#membership .membership-item .membership-features ul li:last-child{
+    margin-bottom: 0;
+}
+
+#membership .membership-item .membership-footer a{
+    background:var(--membg);
+    display: block;
+    line-height: 33px;
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    color : var(--brandcolor);
+    text-decoration: none;
+    transition: all linear 0.4s;
+}
+
+#membership .membership-item:hover .membership-header h4{
+    background: var(--orangecolor);
+    color: white;
+}
+
+
+#membership .membership-item:hover .membership-footer a{
+    background: var(--orangecolor);
+    color: white;
+}
+
+/*=====================================================
+membership ends
+======================================================*/
