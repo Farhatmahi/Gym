@@ -39,4 +39,10 @@ $(function(){
     //pricing parallax
     $('.membership-plan').parallax({imageSrc: '../images/gallery-bg.jpg'});
 
+
+    //counter in funfact
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
 })
