@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?eb808993e255f7872b7d41325665dd70") format("truetype"),
+url("./flaticon.woff?eb808993e255f7872b7d41325665dd70") format("woff"),
+url("./flaticon.woff2?eb808993e255f7872b7d41325665dd70") format("woff2"),
+url("./flaticon.eot?eb808993e255f7872b7d41325665dd70#iefix") format("embedded-opentype"),
+url("./flaticon.svg?eb808993e255f7872b7d41325665dd70#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "man-boxing": "\f101",
+    "man-jumping-rope": "\f102",
+    "weightlifting": "\f103",
+    "exercise": "\f104",
+    "buddhist-yoga-pose": "\f105",
+    "exercise-1": "\f106",
+    "yoga": "\f107",
+);
+
+.flaticon-man-boxing:before {
+    content: map-get($flaticon-map, "man-boxing");
+}
+.flaticon-man-jumping-rope:before {
+    content: map-get($flaticon-map, "man-jumping-rope");
+}
+.flaticon-weightlifting:before {
+    content: map-get($flaticon-map, "weightlifting");
+}
+.flaticon-exercise:before {
+    content: map-get($flaticon-map, "exercise");
+}
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-exercise-1:before {
+    content: map-get($flaticon-map, "exercise-1");
+}
+.flaticon-yoga:before {
+    content: map-get($flaticon-map, "yoga");
+}

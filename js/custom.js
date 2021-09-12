@@ -7,7 +7,14 @@ $(function(){
     },500)
 
     //gallery parallax
-    $('.gallery-bg').parallax({imageSrc: '../images/gallery-bg.jpg'});
+    $('.gallery-bg').parallax({imageSrc: 'images/gallery-bg.jpg'});
+    
+     //testimonial parallax
+     $('.testimonial-bg').parallax({imageSrc: 'images/gallery-bg.jpg'});
+
+     //pricing parallax
+     $('.membership-plan').parallax({imageSrc: 'images/gallery-bg.jpg'});
+ 
 
 
     //about video popup
@@ -33,12 +40,7 @@ $(function(){
         autoplay: true
     },800)
     
-    //testimonial parallax
-    $('.testimonial-bg').parallax({imageSrc: '../images/gallery-bg.jpg'});
-
-    //pricing parallax
-    $('.membership-plan').parallax({imageSrc: '../images/gallery-bg.jpg'});
-
+   
 
     //counter in funfact
     $('.counter').counterUp({
