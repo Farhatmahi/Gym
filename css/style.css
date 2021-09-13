@@ -825,3 +825,103 @@ funfact starts
 /*=====================================================
 funfact ends
 ======================================================*/
+
+/*=====================================================
+routine starts
+======================================================*/
+
+#routine{
+    padding-top: 80px;
+}
+
+
+#routine .nav-tabs{
+    border: none !important;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#routine .nav-tabs .nav-item{
+    width: 16.66%;
+}
+
+#routine .nav-tabs .nav-item .nav-link{
+    border: none !important;
+    background: var(--membg);
+    border-radius: 0;
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--brandcolor);
+    line-height: 50px;
+    width: 100%;
+}
+
+#routine .nav-tabs .nav-item .nav-link.active{
+    background: var(--orangecolor);
+    color: white;
+}
+
+/* #routine .tab-content ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} */
+
+#routine .tab-content ul li{
+    background: var(--membg);
+    width: 20%;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transform: scale(0.98);
+    transition: all ease 0.4s;
+}
+
+#routine .tab-content ul li:hover{
+    transform: scale(0.9);
+    background: var(--orangecolor);
+}
+
+#routine .tab-content ul li:hover p{
+    color: white;
+    transition: all ease 0.4s;
+}
+
+#routine .tab-content ul li:hover i{
+    color: white;
+    transition: all ease 0.4s;
+}
+
+#routine .tab-content ul li p{
+    font-family: var(--pf);
+    font-weight: 400;
+    font-style: 16px;
+    color: var(--brandcolor); 
+}
+
+#routine .tab-content ul li i{
+    color: var(--brandcolor);
+    font-size: 45px;
+}
+
+#routine .tab-content ul li p:last-of-type{
+    font-size: 13px;
+}
+
+#routine .tab-content ul li.active{
+    background: var(--orangecolor);
+}
+
+#routine .tab-content ul li.active p{
+    color: white;
+}
+
+#routine .tab-content ul li.active i{
+    color: white;
+}
+
+/*=====================================================
+routine ends
+======================================================*/
