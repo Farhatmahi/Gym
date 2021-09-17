@@ -41,10 +41,21 @@ $(function(){
     },800)
     
    
-
     //counter in funfact
     $('.counter').counterUp({
         delay: 10,
         time: 1000
     });
+
+    //partner slider
+    $('.partner-slider').slick({
+        autoplay : true,
+        arrows : true,
+        slidesToShow : 5,
+        prevArrow : '<i class="slick-prev fas fa-chevron-left left-arrow"></i>',
+        nextArrow : '<i class="slick-next fas fa-chevron-right right-arrow"></i>',
+        centerMode : true,
+        centerPadding : '0px'
+    },500)
+
 })

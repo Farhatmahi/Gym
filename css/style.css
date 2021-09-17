@@ -925,3 +925,67 @@ routine starts
 /*=====================================================
 routine ends
 ======================================================*/
+
+/*=====================================================
+partner starts
+======================================================*/
+
+#partner{
+    padding-top: 80px;
+}
+
+#partner .partner-item{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#partner .partner-item:hover{ 
+    transition: all ease 0.4s;
+    transform: scale(0.98);
+}
+
+#partner .partner-item img{
+    width: 100%;
+    transform: scale(0.95);
+    transition: all ease 0.4s;
+}
+
+#partner .left-arrow{
+    cursor: pointer;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease 0.4s;
+    z-index: 99999;
+    font-size: 36px;
+}
+
+#partner .left-arrow:hover{
+    color: var(--orangecolor);
+}
+
+#partner .right-arrow{
+    cursor: pointer;
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease 0.4s;
+    z-index: 99999;
+    font-size: 36px;
+}
+
+#partner .right-arrow:hover{
+    color: var(--orangecolor);
+}
+
+#partner .slick-center img{
+    transform: scale(1);
+    box-shadow: 0px 0px 5px 5px #dfdfdf;
+}
+
+
+/*=====================================================
+partner ends
+======================================================*/
