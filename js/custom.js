@@ -16,7 +16,6 @@ $(function(){
      $('.membership-plan').parallax({imageSrc: 'images/gallery-bg.jpg'});
  
 
-
     //about video popup
     $('.venobox').venobox({
         closeColor : '#ffffff',
