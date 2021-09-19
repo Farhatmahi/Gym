@@ -164,4 +164,10 @@ $(function(){
       },1500)
     })
 
+    //preloader
+    var loader = document.getElementById("preloader")
+    window.addEventListener("load", function(){
+      loader.style.display = 'none'
+    })
+
 })
