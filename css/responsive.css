@@ -4,6 +4,10 @@
 
 @media (max-width : 575px){
 
+    #preloader{
+        background-size: 50%;
+    }
+
     .back-to-top{
         right: 20px;
         bottom: 20px;
