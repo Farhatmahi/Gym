@@ -4,6 +4,11 @@
 
 @media (max-width : 575px){
 
+    .back-to-top{
+        right: 20px;
+        bottom: 20px;
+    }
+
     /*navbar starts*/
     .navbar .navbar-brand{
         padding: 0 !important;
