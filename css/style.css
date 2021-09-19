@@ -59,7 +59,7 @@ ul{
 }
 
 #preloader{
-    background: var(--orangecolor) url(../images/image-processing20210907-16567-unscreen.gif) no-repeat center / cover;
+    background: var(--brandcolor) url(../images/image-processing20210907-16567-unscreen.gif) no-repeat center / cover;
     background-size: 15%;
     width: 100%;
     height: 100vh;
