@@ -69,6 +69,11 @@ navbar css starts
     width: 100%;
 }
 
+.navbar .navbar-toggler{
+    z-index: 999999;
+
+}
+
 .navbar .navbar-brand{
     background: var(--brandcolor);
     padding: 10px 35px !important;
@@ -858,7 +863,7 @@ routine starts
 
 #routine .nav-tabs .nav-item .nav-link{
     border: none !important;
-    background: var(--membg);
+    background: var(--memfeature);
     border-radius: 0;
     font-family: var(--hf);
     font-weight: 400;
@@ -881,7 +886,7 @@ routine starts
 } */
 
 #routine .tab-content ul li{
-    background: var(--membg);
+    background: var(--memfeature);
     width: 20%;
     float: left;
     padding-top: 50px;
@@ -1040,6 +1045,10 @@ footer starts
     margin-bottom: 60px;
 }
 
+#footer .footer-item{
+    padding-bottom: 12px !important;
+}
+
 #footer .footer-item h4{
     font-family: var(--hf);
     font-size: 14px;
@@ -1100,10 +1109,9 @@ footer starts
 }
 
 #footer .footer-item .flickr-photos li{
-    /* float: left;
-    width: 25%; */
-    padding-right: 10px;
-    padding-bottom: 10px;
+    float: left;
+    width: 25%;
+    padding: 5px;
 }
 
 #footer .footer-item .flickr-photos li img{

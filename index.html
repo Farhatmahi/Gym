@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +14,8 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/venobox.min.css">
     <link rel="stylesheet" href="./css/flaticon.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
 
@@ -27,8 +28,9 @@
           <a class="navbar-brand py-0 position-absolute" href="#">
               <img src="./images/logo.png" alt="">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler ms-auto bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="fas fa-bars"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -120,7 +122,7 @@
       <section id="about">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-2 order-lg-1">
               <div class="about-image">
                 <figure>
 
@@ -138,7 +140,7 @@
 
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-1 order-lg-2">
               <div class="about-text text-center">
                 <header class="heading text-uppercase"><h3>about us</h3>
                 <img src="./images/arrow-icon.png" alt="arrow"></header>
@@ -169,7 +171,7 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="gallery-item">
                 <figure class="mb-0">
                   <img src="./images/gallery1.jpg" alt="" class="img-fluid w-100">
@@ -196,7 +198,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="gallery-item">
                 <figure class="mb-0">
                   <img src="./images/gallery2.jpg" alt="" class="img-fluid w-100">
@@ -223,7 +225,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6 d-none col-lg-block">
               <div class="gallery-item">
                 <figure class="mb-0">
                   <img src="./images/gallery3.jpg" alt="" class="img-fluid w-100">
@@ -505,7 +507,7 @@
 
         <div class="row">
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
 
             <div class="membership-item text-center">
               <div class="membership-header">
@@ -530,7 +532,7 @@
 
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
 
             <div class="membership-item text-center">
               <div class="membership-header">
@@ -555,7 +557,7 @@
 
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
 
             <div class="membership-item text-center">
               <div class="membership-header">
@@ -594,31 +596,25 @@
     <section id="funfact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 ">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="counter-item">
               <h3 class="counter mb-0 text-white">263</h3>
               <p class="mb-0 text-white text-capitalize">cup of tea</p>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="counter-item text-lg-center">
               <h3 class="counter mb-0 text-white">518</h3>
               <p class="mb-0 text-white text-capitalize">Award Win</p>
             </div>
           </div>
-          <div class="col-lg-4 text-lg-center">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="counter-item">
               <h3 class="counter mb-0 text-white">999</h3>
               <p class="mb-0 text-white text-capitalize">happy clients</p>
             </div>
           </div>
-          <div class="col-lg-2">
-            <div class="counter-item text-lg-center">
-              <h3 class="counter mb-0 text-white">369</h3>
-              <p class="mb-0 text-white text-capitalize">course complete</p>
-            </div>
-          </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-md-6 text-center">
             <div class="counter-item text-lg-end">
               <h3 class="counter mb-0 text-white">209</h3>
               <p class="mb-0 text-white text-capitalize">partner gym</p>
@@ -1038,7 +1034,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 order-1">
             <div class="footer-item text-white">
               <h4 class="text-white text-uppercase mb-0">opening hours</h4>
               <ul class="ps-0 opening-hours">
@@ -1054,7 +1050,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 order-2">
             <div class="footer-item text-white">
               <h4 class="text-white text-uppercase mb-0">twitter feed</h4>
               <ul class="ps-0 twitter-feed">
@@ -1071,10 +1067,10 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 order-3">
             <div class="footer-item text-white">
               <h4 class="text-white text-uppercase mb-0">flickr photos</h4>
-              <ul class="ps-0 flickr-photos">
+              <ul class="ps-0 flickr-photos clearfix">
                 <li><a href="#"><img src="./images/footerflickr.jpg" alt=""></a></li>
                 <li><a href="#"><img src="./images/footerflickr2.jpg" alt=""></a></li>
                 <li><a href="#"><img src="./images/footerflickr3.jpg" alt=""></a></li>
@@ -1087,11 +1083,12 @@
                 <li><a href="#"><img src="./images/footerflickr2.jpg" alt=""></a></li>
                 <li><a href="#"><img src="./images/footerflickr3.jpg" alt=""></a></li>
                 <li><a href="#"><img src="./images/footerflickr4.jpg" alt=""></a></li>
+                
               </ul>
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 order-4">
             <div class="footer-item text-white">
               <h4 class="text-white text-uppercase mb-0">contact</h4>
               <ul class="ps-0 contact">
@@ -1115,7 +1112,7 @@
         <div class="row">
           <div class="col-lg-4 m-auto">
             <div class="footer-text">
-              <p class="mb-0">Copyright &copy All rights reserved by <a href="index.html">GYMNASIUM.</a></p>
+              <p class="mb-0 text-center">Copyright &copy All rights reserved by <a href="index.html">GYMNASIUM.</a></p>
             </div>
           </div>
         </div>

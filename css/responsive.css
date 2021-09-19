@@ -1,0 +1,140 @@
+/*=====================================================
+    extra small device
+=======================================================*/
+
+@media (max-width : 575px){
+
+    /*navbar starts*/
+    .navbar .navbar-brand{
+        padding: 0 !important;
+        transform: skew(0deg);
+        position: static !important;
+    }
+
+    .navbar .navbar-brand img{
+        transform: skew(0deg);
+    }
+
+    .navbar .navbar-toggler{
+        background: #e23e38 !important;
+        color: white !important;
+    }
+
+    .navbar .navbar-nav{
+        background: rgba(255, 255, 255, 0.815);
+        overflow: hidden;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        margin-right: 0px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link{
+        color: #353535;
+        text-align: center;
+    }
+
+    /*navbar ends*/
+
+
+    /*banner starts*/
+
+    #banner .banner-item .banner-text h4::before, 
+    #banner .banner-item .banner-text h4::after, 
+    #banner .banner-item .banner-text h1::before, 
+    #banner .banner-item .banner-text h1::after, 
+    #banner .banner-item .banner-text p::before, 
+    #banner .banner-item .banner-text p::after
+    {
+        display: none;
+    }
+
+    #banner .bg1 p{
+        padding: 0;
+    }
+
+    .navbar .navbar-brand{
+        background: none;
+    }
+
+    #banner .banner-item{
+        padding-top: 220px;
+        padding-bottom: 100px;
+    }
+
+    #banner .banner-item .banner-text h4 {   
+        font-size: 24px;   
+    }
+
+    #banner .banner-item .banner-text h1 {
+        font-size: 48px;  
+    }
+
+    /*banner ends*/
+
+    /*about starts*/
+
+    #about {
+        padding: 50px 0;
+    }
+
+    .about-text p {
+        padding: 5px 0px;
+        text-align: justify;
+    }
+
+    /*about ends*/
+
+    /*testimonial starts*/
+    
+    #testimonial {
+        padding-bottom: 50px;
+    }
+
+    /*testimonial ends*/
+
+    /*team starts*/
+    #team .team-item {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /*team ends*/
+
+
+    /*membership starts*/
+
+    #membership {
+        padding-bottom: 50px;
+    }
+
+    /*membership ends*/
+
+
+    /*routine starts*/
+
+    #routine {
+        padding-top: 50px;
+    }
+
+    #routine .nav-tabs .nav-item {
+        width: 100%;
+    }
+
+    #routine .nav-tabs .nav-item .nav-link {
+        line-height: 40px;
+        margin-bottom: 3px;
+    }
+
+    #routine .tab-content ul li {
+        width: 100%;
+    }
+
+
+
+    /*routine ends*/
+}
+
+
+/*=====================================================
+    extra small device
+=======================================================*/
