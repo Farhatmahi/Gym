@@ -748,6 +748,7 @@ membership starts
 #membership .membership-item .membership-plan{
     position: relative;
     z-index: 1;
+    background: url(../images/gallery-bg.jpg);
 }
 
 #membership .membership-item .membership-plan::before{

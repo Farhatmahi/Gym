@@ -13,7 +13,7 @@ $(function(){
      $('.testimonial-bg').parallax({imageSrc: 'images/gallery-bg.jpg'});
 
      //pricing parallax
-     $('.membership-plan').parallax({imageSrc: 'images/gallery-bg.jpg'});
+    //  $('.membership-plan').parallax({imageSrc: 'images/gallery-bg.jpg'});
  
 
     //about video popup
@@ -161,7 +161,7 @@ $(function(){
     $('.back-to-top').click(function(){
       $('body, html').animate({
         scrollTop : 0, 
-      },1500)
+      })
     })
 
     //preloader
