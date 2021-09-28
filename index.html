@@ -9,14 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/venobox.min.css">
     <link rel="stylesheet" href="./css/flaticon.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/color.css">
+    
 </head>
 <body>
 
@@ -24,7 +26,8 @@
     <i class="fas fa-arrow-up"></i>
   </div>
 
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
+
     
 
     <!--NAVBAR STARTS-->
@@ -34,7 +37,7 @@
           <a class="navbar-brand py-0 position-absolute" href="#">
               <img src="./images/logo.png" alt="">
           </a>
-          <button class="navbar-toggler ms-auto bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler ms-auto bg-light order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon"></span> -->
             <span class="fas fa-bars"></span>
           </button>
@@ -58,9 +61,92 @@
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="#footer">contact</a>
               </li>
+              <li class="nav-item">
+                <a href="" class="btn btn-sm btn-danger text-uppercase sign-up w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary btn-light btn-sm text-uppercase theme w-100" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  theme color
+                  </a>
+              </li>
+              
+            </ul>
           </div>
+          
         </div>
       </nav>
+
+      
+  <!-- Modal -->
+  <div class="modal fade order-1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-capitalize" id="exampleModalLabel">Sign-up form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form action="">
+        <div class="modal-body">
+        
+          <div class="row">
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="modal-image">
+                <img src="./images/gallery1.jpg" class="img-fluid w-100" alt="">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-form">
+                <div class="mb-3 row">
+                  <label class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                 </div>
+                </div>
+                <div class="mb-3 row">
+                  <label class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                 </div>
+                </div>
+                <div class="mb-3 row">
+                  <label class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                  <input type="password" class="form-control">
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-outline-danger">Save changes</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div> 
+
+  <!--offcampus-->
+
+  
+  <div class="offcanvas offcanvas-start order-3" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Theme Color Option</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="color-picker">
+        <ul class="p-0">
+          <li class="default"></li>
+          <li class="green"></li>
+          <li class="red"></li>
+          <li class="blue"></li>
+          <li class="purple"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
     <!--NAVBAR ENDS-->   
 
@@ -1136,7 +1222,6 @@
     <script src="./js/waypoints.min.js"></script>
     <script src="./js/jquery.counterup.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/custom.js"></script>
     <script src="./js/all.min.js"></script>
     <script src="./js/venobox.min.js"></script>
     <script src="./js/parallax.min.js"></script>
@@ -1144,6 +1229,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="./js/custom.js"></script>
 
 </body>
 </html>

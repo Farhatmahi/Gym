@@ -172,6 +172,74 @@ navbar css starts
     width: 100%;
 }
 
+.navbar .navbar-nav .nav-item .sign-up{
+    border-radius: 0 !important;
+}
+
+.navbar .navbar-nav .nav-item .theme{
+    color: var(--brandcolor) !important;
+    border-radius: 0 !important;
+}
+
+.navbar .navbar-nav .nav-item a{
+    font-family: var(--hf) !important;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    line-height: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.modal{
+    z-index: 99999999999999999;
+    background: rgba(0, 0, 0, 0.452);
+}
+
+.modal-title{
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.modal-header, .modal-footer{
+    border: none;
+}
+
+.offcanvas{
+    z-index: 99999999999999999;
+}
+
+.offcanvas ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.offcanvas ul li{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.offcanvas ul li.default{
+    background: #e23e38;
+}
+
+.offcanvas ul li.green{
+    background: #1b7340;
+}
+
+.offcanvas ul li.red{
+    background: #FF0000;
+}
+
+.offcanvas ul li.blue{
+    background: #0072b5;
+}
+
+.offcanvas ul li.purple{
+    background:#800080;
+}
 
 /*=====================================================
 navbar css ends
@@ -319,6 +387,8 @@ banner css starts
 
 #banner .banner-item .banner-text a:first-of-type{
     margin-right: 22px;
+    background: var(--orangecolor);
+    border-color: var(--orangecolor);
 }
 
 #banner .banner-item .banner-text a::before{
@@ -1198,3 +1268,6 @@ footer starts
 /*=====================================================
 footer ends
 ======================================================*/
+
+
+

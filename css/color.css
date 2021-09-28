@@ -1,0 +1,219 @@
+:root{
+    --green : #1b7340;
+    --red : #FF0000;
+    --blue : #0072b5;
+    --purple : #800080;
+}
+
+/*green css*/
+
+.green .navbar .navbar-nav .nav-item .nav-link::after, 
+.green #banner .bg1 h4::before,
+.green #banner .bg1 h4::after,
+.green #banner .bg1 h1::before,
+.green #banner .bg1 h1::after,
+.green #banner .bg1 p::before,
+.green #banner .bg1 p::after,
+.green #banner .banner-item .banner-text a:first-of-type, 
+.green #banner .banner-item .banner-text a:hover::before,
+.green #banner .banner-item .banner-text a:hover::after,
+.green #banner .slick-dots li.slick-active,
+.green #about .about-image .about-overlay .icon,
+.green #membership .membership-item:hover .membership-header h4,
+.green #membership .membership-item:hover .membership-footer a,
+.green #testimonial .slick-dots li.slick-active,
+.green #routine .nav-tabs .nav-item .nav-link.active,
+.green #routine .tab-content ul li.active,
+.green #routine .tab-content ul li:hover,
+.green .back-to-top{
+    background: var(--green);
+}
+
+.green #banner .banner-item .banner-text a:first-of-type{
+    border-color: var(--green);
+}
+
+.green #banner .banner-item .banner-text a:hover::before,
+.green #banner .banner-item .banner-text a:hover::after{
+    border-color: var(--green)
+}
+
+.green #banner .banner-item .banner-text a:hover{
+    border-color: var(--green)
+}
+
+.green #banner .slick-dots li.slick-active{
+    border-color: var(--green)
+
+}
+
+.green #banner .banner-item .banner-text h1{
+    color: var(--green);
+}
+
+.green #gallery .gallery-bg .gallery-item:hover figure .gallery-overlay{
+    background: #1b734096;
+}
+
+.green #team .team-image .team-overlay{
+    background: #1b734096;
+}
+
+.green #testimonial .testimonial-item .icon{
+    color:  var(--green)
+}
+
+.green #testimonial .slick-dots li.slick-active{
+    border-color: var(--green)
+}
+
+.green #footer .footer-item .contact li .icon{
+    color : var(--green)
+}
+
+.green #footer .footer-text p a{
+    color: var(--green)
+}
+
+
+/*green css*/
+
+/*red css*/
+
+.red .navbar .navbar-nav .nav-item .nav-link::after, 
+.red #banner .bg1 h4::before,
+.red #banner .bg1 h4::after,
+.red #banner .bg1 h1::before,
+.red #banner .bg1 h1::after,
+.red #banner .bg1 p::before,
+.red #banner .bg1 p::after,
+.red #banner .banner-item .banner-text a:first-of-type, 
+.red #banner .banner-item .banner-text a:hover::before,
+.red #banner .banner-item .banner-text a:hover::after,
+.red #banner .slick-dots li.slick-active,
+.red #about .about-image .about-overlay .icon,
+.red #membership .membership-item:hover .membership-header h4,
+.red #membership .membership-item:hover .membership-footer a,
+.red #testimonial .slick-dots li.slick-active,
+.red #routine .nav-tabs .nav-item .nav-link.active,
+.red #routine .tab-content ul li.active,
+.red #routine .tab-content ul li:hover,
+.red .back-to-top{
+    background: var(--red)
+}
+.red #banner .banner-item .banner-text a:first-of-type{
+    border-color: var(--red);
+}
+
+.red #banner .banner-item .banner-text a:hover::before,
+.red #banner .banner-item .banner-text a:hover::after{
+    border-color: var(--red)
+}
+
+.red #banner .banner-item .banner-text a:hover{
+    border-color: var(--red)
+}
+
+.red #banner .slick-dots li.slick-active{
+    border-color: var(--red)
+
+}
+
+.red #banner .banner-item .banner-text h1{
+    color: var(--red);
+}
+
+.red #gallery .gallery-bg .gallery-item:hover figure .gallery-overlay{
+    background: #ff00009a;
+}
+
+.red #team .team-image .team-overlay{
+    background: #ff00009a;
+}
+
+.red #testimonial .testimonial-item .icon{
+    color:  var(--red)
+}
+
+.red #testimonial .slick-dots li.slick-active{
+    border-color: var(--red)
+}
+
+.red #footer .footer-item .contact li .icon{
+    color : var(--red)
+}
+
+.red #footer .footer-text p a{
+    color: var(--red)
+}
+
+
+/*red css*/
+
+/*blue css*/
+
+.blue .navbar .navbar-nav .nav-item .nav-link::after, 
+.blue #banner .bg1 h4::before,
+.blue #banner .bg1 h4::after,
+.blue #banner .bg1 h1::before,
+.blue #banner .bg1 h1::after,
+.blue #banner .bg1 p::before,
+.blue #banner .bg1 p::after,
+.blue #banner .banner-item .banner-text a:first-of-type, 
+.blue #banner .banner-item .banner-text a:hover::before,
+.blue #banner .banner-item .banner-text a:hover::after,
+.blue #banner .slick-dots li.slick-active,
+.blue #about .about-image .about-overlay .icon,
+.blue #membership .membership-item:hover .membership-header h4,
+.blue #membership .membership-item:hover .membership-footer a,
+.blue #testimonial .slick-dots li.slick-active,
+.blue #routine .nav-tabs .nav-item .nav-link.active,
+.blue #routine .tab-content ul li.active,
+.blue #routine .tab-content ul li:hover,
+.blue .back-to-top{
+    background: var(--blue)
+}
+.blue #banner .banner-item .banner-text a:first-of-type{
+    border-color: var(--blue);
+}
+
+.blue #banner .banner-item .banner-text a:hover::before,
+.blue #banner .banner-item .banner-text a:hover::after{
+    border-color: var(--blue)
+}
+
+.blue #banner .banner-item .banner-text a:hover{
+    border-color: var(--blue)
+}
+
+.blue #banner .slick-dots li.slick-active{
+    border-color: var(--blue)
+}
+.blue #banner .banner-item .banner-text h1{
+    color: var(--blue);
+}
+
+.blue #gallery .gallery-bg .gallery-item:hover figure .gallery-overlay{
+    background: #0073b588;
+}
+
+.blue #team .team-image .team-overlay{
+    background: #0073b588;
+}
+
+.blue #testimonial .testimonial-item .icon{
+    color:  var(--blue)
+}
+
+.blue #testimonial .slick-dots li.slick-active{
+    border-color: var(--blue)
+}
+.blue #footer .footer-item .contact li .icon{
+    color : var(--blue)
+}
+
+.blue #footer .footer-text p a{
+    color: var(--blue)
+}
+
+/*blue css*/

@@ -1,5 +1,47 @@
 $(function(){
-    //banner slider
+
+    //back to top button
+    $(window).scroll(function(){
+      var scrolling = $(this).scrollTop();
+
+      if(scrolling > 1000){
+          $('.back-to-top').fadeIn()
+      }else{
+          $('.back-to-top').fadeOut()
+      }
+
+      if(scrolling > 400){
+          $('.navbar ul li.active').removeClass('active')
+      }else{
+          $('.navbar ul li:first-child').addClass('active')
+      }
+  })
+    $('.back-to-top').click(function(){
+      $('body, html').animate({
+        scrollTop : 0, 
+      },900)
+    })
+
+    //offcampus
+    $('.offcanvas ul .default').click(function(){
+      $('body').addClass('green')
+    })
+    $('.offcanvas ul .green').click(function(){
+      $('body').addClass('green')
+    })
+
+    $('.offcanvas ul .red').click(function(){
+      $('body').addClass('red')
+    })
+    $('.offcanvas ul .blue').click(function(){
+      $('body').addClass('blue')
+    })
+
+
+
+
+    
+    // banner slider
     $('.banner-slider').slick({
         autoplay : true,
         arrows : false,
@@ -12,9 +54,6 @@ $(function(){
      //testimonial parallax
      $('.testimonial-bg').parallax({imageSrc: 'images/gallery-bg.jpg'});
 
-     //pricing parallax
-    //  $('.membership-plan').parallax({imageSrc: 'images/gallery-bg.jpg'});
- 
 
     //about video popup
     $('.venobox').venobox({
@@ -142,37 +181,17 @@ $(function(){
         ]
     },500)
 
-    //back to top button
-    $(window).scroll(function(){
-      var scrolling = $(this).scrollTop();
-
-      if(scrolling > 1000){
-          $('.back-to-top').fadeIn()
-      }else{
-          $('.back-to-top').fadeOut()
-      }
-
-      if(scrolling > 400){
-          $('.navbar ul li.active').removeClass('active')
-      }else{
-          $('.navbar ul li:first-child').addClass('active')
-      }
-  })
-    $('.back-to-top').click(function(){
-      $('body, html').animate({
-        scrollTop : 0, 
-      })
-    })
+    
 
     //preloader
     var loader = document.getElementById("preloader")
-    // window.addEventListener("load", function(){
-    //   loader.style.display = 'none'
-    // })
-
     $(window).load(function(){
       setTimeout(function(){
         loader.style.display = 'none'
       },3000)
     })
+
+    
+
+    
 })
